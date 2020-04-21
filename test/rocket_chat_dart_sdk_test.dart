@@ -13,7 +13,7 @@ final logger = Logger();
 void main() {
   test('testLogin', () async {
 
-    var client = RocketChatClient.instance('http://rcshared.yellcluster.thg.life');
+    var client = RocketChatClient.getInstance('http://rcshared.yellcluster.thg.life');
 
     var loginResult = await client.restClient.login(LoginRequest('graham', 'password'));
 
